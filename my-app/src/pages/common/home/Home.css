@@ -1,0 +1,54 @@
+.container {
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-direction: row;
+}
+
+.left-column {
+    flex: 1;                     /* both grow to equal height */
+    display: flex;
+    flex-direction: column;
+    border: 0px solid red;
+    align-items: center;
+    width:50vw;
+}
+
+.right-column {
+    flex: 1;                     /* both grow to equal height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 0px solid peru;
+    width: 50vw;
+    height: 50vw;
+    mask-image: radial-gradient(circle, black, black 65%, transparent 85%);
+    
+}
+
+.box {
+    border: 0px solid yellowgreen;
+    width: 40vw;
+    font-family: oswald;
+}
+
+
+.studio-img {
+    border-radius: 50px;
+    height: 23vw;
+    padding:0.5vw;
+}
+
+.therapist-img {
+    border-radius: 50px;
+    height: 23vw;
+    padding:0.5vw;
+}
+.therapy-img {
+    border-radius: 50px;
+    width: 35vw;
+    display: flex;
+    padding:0.5vw;
+    justify-content: center;    /* center horizontally */
+    align-items: center;        /* center vertically */
+    margin-left: 2.5vw;
+}

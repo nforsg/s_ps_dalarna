@@ -1,12 +1,45 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import "./Home.css"
+import studioImage from './studio_image.jpeg';
+import mammaBild from './mamma_bild.jpeg'
+import therapySesison from './therapy-session.png'
 
 function Home(){
   return (
-    <div className="cover">
-      <h1>Welcome to MySite</h1>
-      <p>Your simple Go + React starter</p>
-      <a href="#get-started" className="btn">Get Started</a>
+    <div className="container">
+      <div className='left-column'>
+        <div className='box'>
+          <h1>Samtal och psykoterapi i Dalarna AB</h1>
+          <p>är en samtalsmottagning för vuxna, ungdomar, par och familjer. 
+            Mottagningen ligger i Falun, på Ölandsgatan 10. Fr o m sommaren 2022 finns mottagningen enbart i Falun.</p>
+        </div>
+        <div className='box'>
+          <h1>Samtal <u>och</u> psykoterapi</h1>
+          <p>
+            Samtal för vi dagligen med varandra. Det som skiljer psykoterapeutiska samtal från våra vardagliga förtroliga samtal är att psykoterapeutiska samtal kräver en metod.
+            Metoden ansvarar psykoterapeuten för, likaså en förutsättningslös förståelse
+            och respekt för den eller de individer som terapeuten möter. Förtroende och allians med terapeuten är viktig. Det gemensamma samtalet utgör grunden och metoden den vitala delen för förändring i psykoterapi.
+          </p>
+        </div>
+        <div className='box'>
+          <h1>Om mig</h1>
+          <p>
+            Jag är socionom och legitimerad psykoterapeut. Jag har en integrativ psykoterapeutisk utbildning, vilket innebär att jag arbetar både med KBT (Kognitiv Beteende Terapi) och psykodynamiska metoder. 
+            Jag har också en familjeterapeutisk- och en ungdomsterapeutisk utbildning. Detta innebär att jag har möjlighet att anpassa metod efter behov.
+            Jag har en lång erfarenhet inom psykiatri och socialt arbete.
+          </p>
+        </div>
+      </div>
+      <div className='right-column'>
+        <div className='image-box'>
+          <img src={mammaBild} alt="Terapeut" className='therapist-img'/>
+          <img src={studioImage} alt="Terapi-vistelse" className='studio-img'/>
+          <img src={therapySesison} alt="Terapi" className='therapy-img'/>
+        </div>
+
+      </div>
+
     </div>
   );
 }

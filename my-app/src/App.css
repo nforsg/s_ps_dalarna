@@ -45,32 +45,36 @@ body {
   color: #00d8ff;
 }
 
+.oswald-<uniquifier> {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
 
-
-.cover {
+.container {
   display: flex;
+  border: 0px solid black;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 80vh;
-  background: linear-gradient(to right, #667eea, #764ba2);
-  color: white;
-  text-align: center;
+  min-height: 80vh;
+
+  background-color: #FDF6F3;
+  /*background: linear-gradient(1turn, #FDF6F3 90%, #8BC34A 100%);*/
+  align-items: left;
+  text-align: left;
   padding: 2rem;
 }
 
-.cover h1 {
+.container h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
 }
 
-.cover p {
+.container p {
   font-size: 1.25rem;
   margin-bottom: 2rem;
-}
-
-.about {
-  background-color:#00d8ff;
 }
 
 .btn {

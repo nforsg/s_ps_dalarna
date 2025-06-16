@@ -1,0 +1,29 @@
+.container {
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-direction: row;
+}
+
+
+.right-column-about {
+    flex: 1;                     /* both grow to equal height */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 0px solid peru;
+    width: 50vw;
+    height: 50vw;
+    mask-image: radial-gradient(circle, black, black 55%, transparent 85%);
+    
+}
+
+.image-box-about{
+  border: 0px solid palegoldenrod;
+}
+
+.west-coast-img {
+  border-radius: 50px;
+  width: 30vw;
+}
+

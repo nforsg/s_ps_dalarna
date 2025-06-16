@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
 
 import { Home, Contact, About, NotFoundPage } from './pages/common'
-import { NavBar, Header } from './components/common';
+import { Header, Footer } from './components/common';
 
 function App() {
   return (
@@ -15,7 +15,9 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path= "*" element={<NotFoundPage/>}/>
       </Routes>
+      <Footer/>
     </Router>
+    
   );
 }
 
