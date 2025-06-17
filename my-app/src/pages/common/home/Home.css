@@ -21,7 +21,7 @@
     border: 0px solid peru;
     width: 50vw;
     height: 50vw;
-    mask-image: radial-gradient(circle, black, black 65%, transparent 85%);
+    /*mask-image: radial-gradient(circle, black, black 65%, transparent 85%);*/
     
 }
 
@@ -36,12 +36,22 @@
     border-radius: 50px;
     height: 23vw;
     padding:0.5vw;
+    transition: 0.3s;
+    transition-delay: 0.1s;
+    &:hover {
+        transform: scale(1.1);
+    }
 }
 
 .therapist-img {
     border-radius: 50px;
     height: 23vw;
     padding:0.5vw;
+    transition: 0.3s;
+    transition-delay: 0.1s;
+    &:hover {
+        transform: scale(1.1);
+    }
 }
 .therapy-img {
     border-radius: 50px;
@@ -51,4 +61,9 @@
     justify-content: center;    /* center horizontally */
     align-items: center;        /* center vertically */
     margin-left: 2.5vw;
+    transition:0.3s;
+    transition-delay: 0.1s;
+    &:hover {
+        transform: scale(1.1);
+    }
 }

@@ -1,11 +1,14 @@
 .footer {
+  border:0px solid purple;
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   font-weight: bold;
+  background-color:#8BC34A;
 }
 
 .footer-social-media {
+  bordeR: 0px solid yellowgreen;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -14,11 +17,13 @@
 
 .footer-social-media__icon {
   margin: 0px 4px;
+  border:5 px solid brown;
   width: 25px;
   height: 25px;
 }
 
 .footer-info  {
+  border:0px solid green;
   display: flex;
   justify-content: center;
 }
@@ -27,7 +32,10 @@
   font-size: x-small;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 10px;
+  border:0px solid black;
   width: 30%;
 }
 

@@ -26,7 +26,7 @@ Psykoterapeutiska metoder enligt KBT innebär att individ och terapeut gemensamt
           <h1>
             Parterapi
           </h1>
-          I parterapi lär sig individerna att vara närvarande lyssnande till varandra. Fokus i samtalen är respekt och förståelse för de egna och partnerns behov, svårigheter, styrkor och önskningar i relationen och hur dessa verkar för eller emot en hållbar relation. Parterapi innebär på så sätt att utvecklas tillsammans i en jämbördig relation med en balans mellan två vuxna.
+          <p>I parterapi lär sig individerna att vara närvarande lyssnande till varandra. Fokus i samtalen är respekt och förståelse för de egna och partnerns behov, svårigheter, styrkor och önskningar i relationen och hur dessa verkar för eller emot en hållbar relation. Parterapi innebär på så sätt att utvecklas tillsammans i en jämbördig relation med en balans mellan två vuxna.</p>
         </div>
         <div className='box'>
           <h1>Unga-vuxna</h1>

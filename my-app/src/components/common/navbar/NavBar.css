@@ -34,7 +34,7 @@
   inset: 0;
   width: 100%;
   background: red;
-  background: linear-gradient(0.25turn, #8BC34A, #78a346 var(--fade-amount), #78a346 calc(100% - var(--fade-amount)), #8BC34A);
+  background: linear-gradient(0.25turn, #8BC34A, #FDF6F3 var(--fade-amount), #FDF6F3 calc(100% - var(--fade-amount)), #8BC34A);
   z-index: -1;
   opacity: 0;
   transition: opacity 0.3s ease;
@@ -60,7 +60,8 @@
 }
 
 .navbar-item:hover p {
-  color: rgba(197, 198, 195, 0.971);
+  /*color: rgba(197, 198, 195, 0.971);*/
+  color:#8BC34A;
 }
 /*
 .navbar-item p {

@@ -14,7 +14,7 @@
     border: 0px solid peru;
     width: 50vw;
     height: 50vw;
-    mask-image: radial-gradient(circle, black, black 55%, transparent 85%);
+    /*mask-image: radial-gradient(circle, black, black 55%, transparent 85%);*/
     
 }
 
@@ -25,5 +25,10 @@
 .west-coast-img {
   border-radius: 50px;
   width: 30vw;
+  transition: 0.3s;
+  transition-delay: 0.1s;
+    &:hover {
+        transform: scale(1.2);
+    }
 }
 

@@ -8,43 +8,26 @@ function Footer () {
 
   return (
     <section className="footer">
-      <hr className="footer-seperator" />
-      <section className="footer-social-media">
-        <Link to="/" className='navbar-item'><p>something</p></Link>
-      </section>
       <section className="footer-info">
         <section className="footer-info-left">
           <section className="footer-info__name">
-              Software Engineer Haydn
+              Hemsida gjord av Nils Forsgren
           </section>
-          <section className="footer-info__returns">
-            Returns Policy
-            <br />
-            Delivery
-          </section>        
         </section>
         <section className="footer-info-center">
           <section className="footer-info__email">
-            shop.info@gmail.com
+            <p> forsgren@samterapidalarna.se</p>
           </section>
           <section className="footer-info__terms">
-            Terms and Conditions
-            <br />
-            Copyright
+            <p>Copyright {'\u00A9'} All Rights Reserved</p>
           </section>
         </section>
         <section className="footer-info-right">
           <section className="footer-info__number">
-            99999999999
-          </section>
-          <section className="footer-info__contact">
-            My Story
-            <br />
-            Contact Us
+            <p>070-699 12 05</p>
           </section>
         </section>
       </section>
-      <hr className="footer-seperator" />
     </section>
   )
 
