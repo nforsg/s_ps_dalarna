@@ -4,6 +4,8 @@ import "./Home.css"
 import studioImage from './studio_image.jpeg';
 import mammaBild from './mamma_bild.jpeg'
 import therapySesison from './therapy-session.png'
+import olandsGatan1 from './olandsgatan1.jpg'
+import falun14 from './falun_014.jpg'
 
 function Home(){
   return (
@@ -32,10 +34,10 @@ function Home(){
         </div>
       </div>
       <div className='right-column'>
-        <div className='image-box'>
-          <img src={mammaBild} alt="Terapeut" className='therapist-img'/>
-          <img src={studioImage} alt="Terapi-vistelse" className='studio-img'/>
-          <img src={therapySesison} alt="Terapi" className='therapy-img'/>
+        <div className='img-box'>
+          <img src={mammaBild} alt="Terapeut" className='img__therapist img-hover'/>
+          <img src={studioImage} alt="Terapi-vistelse" className='img__studio img-hover'/>
+          <img src={falun14} alt="Lokal_bild1" className='img__house img-hover'/>
         </div>
 
       </div>

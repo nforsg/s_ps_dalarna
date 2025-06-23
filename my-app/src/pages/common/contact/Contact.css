@@ -13,28 +13,12 @@
     align-items: center;
     justify-content: center;
     border: 0px solid peru;
-    border-radius: 50px;
-    width: 50vw;
-    height: 50vw;
+    border-radius: 10px;
+    width:60vw;
     /*mask-image: linear-gradient(0.25turn, transparent 1%, black 10%, transparent 85%);*/
-    background-image: url("busy-image.png");
+    background-image: url("olandsgatan1.jpg");
 }
 
-.left-column-contact p {
-    font-family: oswald;
-}
-
-.left-column-contact h1 {
-    font-family: oswald;
-}
-
-.left-column-contact h2 {
-    font-family: oswald;
-}
-
-.left-column-contact h3 {
-    font-family: oswald;
-}
 
 .box-contact {
     border-radius: 10px;
@@ -47,6 +31,24 @@
      /* Box Shadow */
      box-shadow: 1px 1px 10px 0px black;
 }
+
+.box-contact p {
+    border: 0px solid black;
+    padding:0;
+    margin:0;
+}
+
+.box-contact h1{
+    transition: 0.3s;
+}
+
+.box-contact h2 {
+    border: 0px solid black;
+    padding:0;
+    margin:0;
+
+}
+
 
 .right-column-contact {
     flex: 1;                     /* both grow to equal height */
@@ -65,7 +67,7 @@
     flex-direction: column;
 }
 
-.office-img {
+.img__office {
     border-radius: 50px;
     height: 23vw;
     padding:0.5vw;
@@ -76,3 +78,12 @@
     }
 }
 
+.img__street {
+    border-radius: 50px;
+    width: 35vw;
+    display: flex;
+    padding:0.5vw;
+    justify-content: center;    /* center horizontally */
+    align-items: center;        /* center vertically */
+    margin-left: 2.5vw;
+}

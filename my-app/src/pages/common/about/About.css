@@ -8,7 +8,7 @@
 .right-column-about {
     flex: 1;                     /* both grow to equal height */
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     border: 0px solid peru;

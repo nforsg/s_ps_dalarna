@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import vastKusten from './vastkusten.jpeg'
+import falun14 from './falun_014.jpg'
 import "./About.css"
 function About(){
   return (

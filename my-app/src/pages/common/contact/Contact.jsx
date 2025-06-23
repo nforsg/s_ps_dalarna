@@ -3,8 +3,10 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import "./Contact.css"
 import office1 from './office1.jpeg'
 import office2 from './office2.jpeg'
+import olandsGatan3 from './olandsgatan3.jpg'
 import { Box, Typography } from "@mui/material"
 import busyImage from './busy-image.png'
+import olandsGatan1 from './olandsgatan1.jpg'
 
 function Contact(){
   return (
@@ -13,10 +15,10 @@ function Contact(){
       <Box className='contact-window' flex={1}>
         <Box 
           sx={{
-            backgroundColor: 'rgba(255, 255, 255, 0.5)',
+            backgroundColor: 'transparent'/*'rgba(255, 255, 255, 0.5)'*/,
             backgroundRepeat: "no-repeat",
             boxShadow: 5,
-            borderRadius: 2,
+            borderRadius: 0,
             p: 2
           }}
         >
@@ -27,7 +29,7 @@ function Contact(){
               borderRadius: 2,
               boxShadow: 5}}
           >
-            <Typography variant="h1" fontWeight="bold">Kontakt</Typography>
+            <h1>Kontakt</h1>
           </Box>
           <Box
             className='box-contact' 
@@ -42,11 +44,9 @@ function Contact(){
               }
             }}
           >
-            <Typography variant="h6" fontWeight="bold"><p>Besöksadress:</p></Typography>
-            <Typography variant="subtitle1" fontWeight="medium"><p>Ölandsgatan 10, Falun</p></Typography>
-            <Typography variant="body1">
-              1 tr upp. Parkering i kvarteret eller allmän parkering på Nybrogatan
-            </Typography>
+            <h2>Besöksadress:</h2>
+            <p>Ölandsgatan 10, Falun</p>
+            <p>1 tr upp. Parkering i kvarteret eller allmän parkering på Nybrogatan</p>
           </Box>
 
           <Box 
@@ -61,8 +61,8 @@ function Contact(){
                 transform: 'scale(1.1)'
               }}}
           >
-            <Typography variant="h6" fontWeight="bold">Telefon:</Typography>
-            <Typography>070-699 12 05</Typography>
+            <h2>Telefon:</h2>
+            <p>070-699 12 05</p>
           </Box>
 
           <Box 
@@ -76,8 +76,8 @@ function Contact(){
                 transform: 'scale(1.1)'
               } }}
           >
-            <Typography variant="h6" fontWeight="bold">Mail:</Typography>
-            <Typography>forsgren@samterapidalarna.se</Typography>
+            <h2>Mail:</h2>
+            <p>forsgren@samterapidalarna.se</p>
           </Box>
         </Box>
       </Box>
@@ -85,8 +85,9 @@ function Contact(){
       </div>
       <div className='right-column-contact'>
         <div className='image-box-contact'>
-          <img src={office1} alt="Ingång" className='office-img'/>
-          <img src={office2} alt="Terapeut" className='office-img'/>
+          <img src={office1} alt="Ingång" className='img__office'/>
+          <img src={office2} alt="Terapeut" className='img__office'/>
+          <img src={olandsGatan3} alt="Terapeut" className='img__street img-hover'/>
         </div>
       </div>
     </div>

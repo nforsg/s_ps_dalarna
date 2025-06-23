@@ -31,39 +31,27 @@
     font-family: oswald;
 }
 
+.img-box {
 
-.studio-img {
+}
+
+.img__studio {
     border-radius: 50px;
     height: 23vw;
     padding:0.5vw;
-    transition: 0.3s;
-    transition-delay: 0.1s;
-    &:hover {
-        transform: scale(1.1);
-    }
 }
 
-.therapist-img {
+.img__therapist {
     border-radius: 50px;
     height: 23vw;
     padding:0.5vw;
-    transition: 0.3s;
-    transition-delay: 0.1s;
-    &:hover {
-        transform: scale(1.1);
-    }
+
 }
-.therapy-img {
+.img__house {
     border-radius: 50px;
-    width: 35vw;
+    width: 40vw;
     display: flex;
-    padding:0.5vw;
+    padding:1vw;
     justify-content: center;    /* center horizontally */
     align-items: center;        /* center vertically */
-    margin-left: 2.5vw;
-    transition:0.3s;
-    transition-delay: 0.1s;
-    &:hover {
-        transform: scale(1.1);
-    }
 }

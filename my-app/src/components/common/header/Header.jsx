@@ -20,7 +20,7 @@ function Header () {
                 rel="noopener noreferrer"
                 className="header-top__photo"
                 >
-                <p>Foto: Calle Eklund</p>
+                <p>Foto: Calle Walla (f.d Eklund)</p>
                 </a>
                 </section>
                 <section className="header-bottom">
