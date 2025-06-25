@@ -1,29 +1,45 @@
-.header {
-  margin-top: none;
-  border: 0px solid black;
-  height:42vh;
-  display: flex;
-  flex: 1;
+@media (min-width: 601px) {
+  .header {
+    height:42vh;
+  }
 
-  flex-direction: column;
-  background-color: #8BC34A;
-  /*background: linear-gradient(1turn,  #8BC34A 15%, #FDF6F3 100%);*/
+  .header-top {
+    height: 35vh;
+  }
+
+  .header-top__logo h1 {
+      font-size: 2.5rem;
+  }
+  .header-bottom {
+    flex-direction: column;
+  }
 }
 
-/*.header-top {
-  height: 18vh;
-  display: flex;
-  flex-direction: c
-  olumn;
-  justify-content: left;
-  align-items: left;
+@media (max-width: 600px) {
+  .header {
+    height:32vh;
+  }
 
-  background-image: url("Grådö_skans_edit_small.jpg");
-}*/
+  .header-top {
+    height: 25vh;
+  }
+
+  .header-top__logo h1 {
+    font-size: 1.8rem;
+  }
+}
+
+
+.header {
+  margin-top: none;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  background-color: #8BC34A;
+  
+}
 
 .header-top {
-  height: 35vh;
-  border: 0px solid brown;
   display: flex;
   flex-direction: column;
   justify-content: left;
@@ -31,28 +47,21 @@
   background-image: url("Grådö_skans_edit.jpg");
   background-size: cover;
   background-position: center;
-
-  /* Fading bottom 
-  -webkit-mask-image: linear-gradient(to bottom, black 98%, transparent 100%);
-  mask-image: linear-gradient(to bottom, black 98%, transparent 100%);*/
 }
 
 .header-top__logo {
   display: flex;
   align-items: center;
   width: fit-content;
-  font-family: oswald;
   padding: 0 2vw;
   text-decoration: none;
   height: auto;
   margin-left: 2vh 2vw;
   margin-top:1vh;
-  border: 0px solid greenyellow;
   box-sizing: border-box;
 }
 
 .header-top__logo h1 {
-  font-size: 2.5rem;
   color: #FDF6F3;
   margin: 0;
   white-space: normal;
@@ -66,66 +75,67 @@
 
 .header-top__name {
   width:fit-content;
-  align-items: center;
   padding: 0 2vw;
   border:0px solid pink;
-  font-family: oswald;
-  margin-left: 2vh 2vw;
   color:  #FDF6F3;  
   text-decoration: inherit;
-  height: auto;
-  font-size: 1.5rem;
-  box-sizing: border-box;
-
+  height: fit-content;
 }
-.header-top__name p:hover {
+.header-top__name h3:hover {
     color: rgba(197, 198, 195, 0.971);
     transition: 0.3s;
 }
 
-/* Remove underline from the link */
-.header-top__name {
-  color: #FDF6F3;
-  font-family: oswald;
-  font-size: 1.5rem;
-  text-decoration: none; /* <-- IMPORTANT */
-  margin: 0;
-  display: inline-block;
-}
-
-.header-top__name:hover {
-  color: rgba(197, 198, 195, 0.971);
-  transition: 0.3s;
-  text-decoration: none; /* <-- Also for hover */
-}
-
-
 .header-top__photo {
-  border: 0px solid black;
+  border: 0px solid white;
   width: fit-content;
   color: #FDF6F3;
   padding: 0 2vw;
-  margin-left: 2vh 2vw;
+  margin-top: 2vh;
+  align-self: flex-start; /* <-- ensures it sticks to the left in flex container */
   font-family: oswald;
-  text-decoration: none;  /* ⬅ This removes the underline */
+  text-decoration: none;
+}
+
+.header-top__photo p {
+  font-size: 0.5rem;
 }
 
 .header-top__photo p:hover {
   color: #FDF6F3;
-  font-family: oswald;
   text-decoration: none;  /* ⬅ This removes the underline */
   color: rgba(197, 198, 195, 0.971);
-  transition: 0.3s;}
+  transition: 0.3s;
+}
 
 .header-bottom {
-  border: 0px solid yellow;
   display: flex;
   align-items: center;
   flex: 1;
-  flex-direction: column;
   height:7vh;
   width:99vw;
-  background-color: ;
   align-items: center;
 }
 
+@media (max-width:600px) {
+  .header-bottom{
+    flex-direction: row;
+  }
+}
+
+@media (max-height:850px) {
+  .header-top__photo {
+    margin-top: 1vh;
+  }
+  
+}
+
+@media (max-height:700px) {
+  .header-top__logo h1 {
+    font-size:1.5rem;
+  }
+  .header-top__name h3 {
+    font-size:0.8rem;
+  }
+  
+}

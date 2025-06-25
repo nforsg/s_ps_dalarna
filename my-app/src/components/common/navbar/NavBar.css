@@ -1,68 +1,93 @@
-.navbar {
-  border:0px solid purple;
-  display: flex;
-  height:7vh;
-  flex-direction: row;
-  justify-content: center;
+@media (min-width:601px) {
+
+  .navbar {
+    border:0px solid purple;
+    display: flex;
+    height:7vh;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .navbar-header {
+    display: none;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .navbar-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+
+  .navbar-item {
+    display: flex;
+    width: 20vw;
+    padding-left: 0vw;
+    position:relative;
+    padding-right: 0vw;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0vw;
+    margin-right: 0vw;
+    color: inherit;
+    text-decoration: inherit;
+    text-transform: uppercase;
+    outline: none;
+    overflow: hidden;
+    z-index: 0;
+    --fade-amount: 10%;
+    transition: background 0.8s ease;  /* or all 0.8s ease */
+  }
+
+  .navbar-item::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    inset: 0;
+    width: 100%;
+    background: red;
+    background: linear-gradient(0.25turn, #8BC34A, #FDF6F3 var(--fade-amount), #FDF6F3 calc(100% - var(--fade-amount)), #8BC34A);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .navbar-item:hover::after {
+    opacity: 1;
+    color:rgba(197, 198, 195, 0.971);
+    transition: 0.3s;
+  }
+
+  .navbar-item:hover{
+    
+    /*background: linear-gradient(0.25turn, #8BC34A, #78a346 var(--fade-amount), #78a346 calc(100% - var(--fade-amount)), #8BC34A);*/
+    z-index: 0;
+  }
+
+  .navbar-item:hover p {
+    /*color: rgba(197, 198, 195, 0.971);*/
+    color:#8BC34A;
+    transform: scale(1.1);
+  }
+
 }
 
-.navbar-item {
-  border: 0px solid green;
-  display: flex;
-  width: 20vw;
-  padding-left: 0vw;
-  position:relative;
-  padding-right: 0vw;
-  justify-content: center;
-  align-items: center;
-  margin-left: 0vw;
-  margin-right: 0vw;
-  color: inherit;
-  text-decoration: inherit;
-  text-transform: uppercase;
-  outline: none;
-  overflow: hidden;
-  z-index: 0;
-  --fade-amount: 10%;
-  transition: background 0.8s ease;  /* or all 0.8s ease */
-}
+  .navbar-item {
+    color: inherit;
+    text-decoration: inherit;
+    text-transform: uppercase;
+  }
 
-.navbar-item::after {
-  content: '';
-  position: absolute;
-  height: 100%;
-  inset: 0;
-  width: 100%;
-  background: red;
-  background: linear-gradient(0.25turn, #8BC34A, #FDF6F3 var(--fade-amount), #FDF6F3 calc(100% - var(--fade-amount)), #8BC34A);
-  z-index: -1;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
+  .navbar-item p {
+    color: #FDF6F3;
+    font-family: oswald;
+    font-size: 1.5em;
+    transition: 0.3s; /* put transition here so it works in both states */
+  }
 
-.navbar-item:hover::after {
-  opacity: 1;
-  color:rgba(197, 198, 195, 0.971);
-  transition: 0.3s;
-}
-
-.navbar-item:hover{
-  
-  /*background: linear-gradient(0.25turn, #8BC34A, #78a346 var(--fade-amount), #78a346 calc(100% - var(--fade-amount)), #8BC34A);*/
-  z-index: 0;
-}
-
-.navbar-item p {
-  color: #FDF6F3;
-  font-family: oswald;
-  font-size: 1.5em;
-  transition: color 0.3s; /* put transition here so it works in both states */
-}
-
-.navbar-item:hover p {
-  /*color: rgba(197, 198, 195, 0.971);*/
-  color:#8BC34A;
-}
 /*
 .navbar-item p {
   color: #FDF6F3;
@@ -75,3 +100,72 @@
   color:rgba(197, 198, 195, 0.971);
   transition: 0.3s; 
 }*/
+
+@media (max-width: 600px) {
+  .navbar {
+    position: relative;
+    height: 7vh; /* fixed height for navbar */
+    background-color: #8BC34A;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+  }
+
+  .navbar-header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .hamburger {
+    font-size: 2rem;
+    background: none;
+    border: 0px solid purple;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1001;
+  }
+
+  .navbar-menu {
+    position: absolute;
+    top: 100%;
+    width:100%;
+    left: 0;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    background-color: #8BC34A;
+    border-top: 0px solid white;
+    border: 0px solid black;
+
+    z-index: 999;
+  }
+
+  .navbar-menu.is-open {
+    display: block;
+    width:35vw;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .navbar-menu.is-open p {
+    border:0px solid purple;
+  }
+
+  .navbar-item {
+    padding: 1rem;
+    text-align: left;
+    border-top: 1px solid #ccc;
+    color: white;
+    text-decoration: none;
+  }
+
+  .navbar-item p {
+    margin: 0;
+    font-family: Oswald, sans-serif;
+    font-size: 1.2rem;
+  }
+}

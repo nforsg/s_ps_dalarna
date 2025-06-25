@@ -6,7 +6,7 @@ import "./About.css"
 function About(){
   return (
     <div className='container'>
-      <div className='left-column'>
+      <div className='left-column-about'>
         <div className='box'>
           <h1>Psykoterapi</h1>
           <p>

@@ -12,7 +12,7 @@ function Header () {
                     <h1>Samtal & Psykoterapi i Dalarna AB</h1>
                 </Link>
                 <Link to="/contact"  className="header-top__name">
-                    <p>Ann-Christine Forsgren</p>
+                    <h3>Ann-Christine Forsgren</h3>
                 </Link>
                 <a
                 href="https://commons.wikimedia.org/w/index.php?title=User:Vivo&rdfrom=commons:User:V-wolf"

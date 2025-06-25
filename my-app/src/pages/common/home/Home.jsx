@@ -34,12 +34,24 @@ function Home(){
         </div>
       </div>
       <div className='right-column'>
-        <div className='img-box'>
-          <img src={mammaBild} alt="Terapeut" className='img__therapist img-hover'/>
-          <img src={studioImage} alt="Terapi-vistelse" className='img__studio img-hover'/>
+        <figure>
+            <img src={mammaBild} alt="Terapeut" className='img__therapist img-hover'/>
+        </figure>
+        <figure>
+            <img src={studioImage} alt="Terapi-vistelse" className='img__studio img-hover'/>
+        </figure>
+        <figure>
           <img src={falun14} alt="Lokal_bild1" className='img__house img-hover'/>
-        </div>
-
+          <figcaption className='fig-caption'>                
+            <a
+                href="https://www.imagesoftheworld.se/People%20and%20Places/Scandinavia/Dalarna/Falun/index.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="img-house__caption"
+            >
+                <p>Foto: Lars-Gunnar Svärd</p>
+                </a></figcaption>
+        </figure>
       </div>
 
     </div>

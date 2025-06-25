@@ -1,11 +1,7 @@
-.container {
-    justify-content: flex-start;
-    align-items: stretch;
-    flex-direction: row;
-}
+
+@media (min-width: 601px) {
 
 .left-column {
-    flex: 1;                     /* both grow to equal height */
     display: flex;
     flex-direction: column;
     border: 0px solid red;
@@ -14,44 +10,158 @@
 }
 
 .right-column {
-    flex: 1;                     /* both grow to equal height */
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap:wrap;
     border: 0px solid peru;
     width: 50vw;
-    height: 50vw;
-    /*mask-image: radial-gradient(circle, black, black 65%, transparent 85%);*/
-    
+    justify-content: center;
+    align-items: center;
 }
+
+.container {
+    flex-direction: row;
+}
+
 
 .box {
-    border: 0px solid yellowgreen;
     width: 40vw;
-    font-family: oswald;
 }
 
-.img-box {
 
+.right-column figure {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 1vw;
+    padding:0.5vw;
+    margin:0;
+    border: 0px solid purple;
 }
+
 
 .img__studio {
     border-radius: 50px;
     height: 23vw;
-    padding:0.5vw;
 }
 
 .img__therapist {
     border-radius: 50px;
     height: 23vw;
-    padding:0.5vw;
 
 }
 .img__house {
     border-radius: 50px;
     width: 40vw;
-    display: flex;
-    padding:1vw;
-    justify-content: center;    /* center horizontally */
-    align-items: center;        /* center vertically */
+}
+
+.fig-caption {
+
+  bottom: 0.5vh;
+  left: 3vw;
+}
+
+}
+
+
+.fig-caption {
+    font-size: 12px;
+    position: absolute;
+}
+
+.container {
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.img-house__caption {
+  text-decoration: none;  /* ⬅ This removes the underline */
+  color: rgba(197, 198, 195, 0.971);
+  transition: 0.3s;;
+}
+
+.img-house__caption p{
+    color: #FDF6F3;
+    font-size: 10px;
+    &:hover{
+        color: rgba(197, 198, 195, 0.971);
+        transition: 0.3s;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        width: auto;
+        flex-direction: column;
+        padding: 1rem;
+        border:1px solid black;
+    }
+
+    .top-images-row {
+        display: flex;
+        justify-content: center;
+        gap: 1vw;
+        margin-bottom: 1vh;
+    }
+
+    .left-column {
+        height:fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        border: 0px solid black;
+    }
+
+    .right-column {
+        height:fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 0px solid black;
+    }
+
+    .box {
+        width: 100%;
+    }
+
+    .box h1 {
+        font-size: 1.8rem;
+    }
+
+    .box p {
+        font-size: 1.0rem;
+    }
+
+    
+
+    .right-column figure {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 1vh;
+        padding:0.5vw;
+        margin:0;
+    }
+
+
+    .img__studio {
+        border-radius: 10px;
+        width: 80vw;
+    }
+
+    .img__therapist {
+        border-radius: 10px;
+        width: 80vw;
+
+    }
+    .img__house {
+        border-radius: 10px;
+        width: 80vw;
+    }
+
+  .fig-caption {
+    bottom: 0vh;
+    margin-left: 2%;
+    left: 1vw;
+    }
+
 }

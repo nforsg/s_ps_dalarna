@@ -1,24 +1,32 @@
+@media (min-width:601px) {
+    
 .container {
     justify-content: flex-start;
     align-items: stretch;
     flex-direction: row;
-    font-family: oswald;
 }
 
-
 .left-column-contact {
-    flex: 1;                     /* both grow to equal height */
+    flex: 1;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     border: 0px solid peru;
     border-radius: 10px;
-    width:60vw;
-    /*mask-image: linear-gradient(0.25turn, transparent 1%, black 10%, transparent 85%);*/
+    height: 95vh;
     background-image: url("olandsgatan1.jpg");
+    background-size: cover;          /* Scales image to cover container */
+    background-repeat: no-repeat;    /* Avoid tiling */
+    background-position: center;     /* Center the image in the div */
 }
 
+
+.contact-window {
+    border:0px solid black;
+    margin-left: 2vw;
+
+}
 
 .box-contact {
     border-radius: 10px;
@@ -86,4 +94,106 @@
     justify-content: center;    /* center horizontally */
     align-items: center;        /* center vertically */
     margin-left: 2.5vw;
+}
+
+}
+
+@media (max-width:600px) {
+  .container {
+    justify-content: flex-start;
+    align-items: stretch;
+    width: 90%;
+    flex-direction: column;
+  }
+
+  .left-column-contact {
+    flex: none;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: flex-start;
+    border: 0px solid peru;
+    border-radius: 10px;
+    height: fit-content;
+    background-image: url("olandsgatan1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0.2rem;
+  }
+
+  .contact-window {
+    width: 80%;
+    border:0px solid black;
+    padding:1%;
+  }
+
+  .box-contact {
+    border-radius: 10px;
+    margin-top: 1rem;;
+    border:15px solid yellow;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 10px 0px black;
+    font-size: 0.9rem;
+    transition: transform 0.3s ease;
+    transition-delay: 0.1s;
+  }
+
+  .box-contact:hover {
+    transform: scale(1.05); /* reduced hover effect for smaller screens */
+  }
+
+  .box-contact p {
+    border: 0px solid black;
+    padding: 0;
+    margin: 0;
+  }
+
+  .box-contact h1, 
+  .box-contact h2 {
+    margin: 0;
+    font-size: 1.2rem; /* scaled down for mobile */
+  }
+
+  .right-column-contact {
+    width: 95%;
+    flex: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 0px solid peru;
+    padding: 1rem 0;
+  }
+
+  .image-box-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 95%;
+    border:0px solid purple;
+  }
+
+  .img__office {
+    border-radius: 20px;
+    width: 90%;
+    transition: 0.3s;
+    transition-delay: 0.1s;
+  }
+
+  .img__office:hover {
+    transform: scale(1.1);
+  }
+
+  .img__street {
+    border-radius: 20px;
+    width: 90%;
+    padding: 0.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

@@ -13,15 +13,6 @@ function Contact(){
     <div className='container'>
       <div className='left-column-contact'>
       <Box className='contact-window' flex={1}>
-        <Box 
-          sx={{
-            backgroundColor: 'transparent'/*'rgba(255, 255, 255, 0.5)'*/,
-            backgroundRepeat: "no-repeat",
-            boxShadow: 5,
-            borderRadius: 0,
-            p: 2
-          }}
-        >
           <Box
             className='box-contact' 
             sx={{ mb: 2, p: 2,
@@ -79,7 +70,6 @@ function Contact(){
             <h2>Mail:</h2>
             <p>forsgren@samterapidalarna.se</p>
           </Box>
-        </Box>
       </Box>
 
       </div>
