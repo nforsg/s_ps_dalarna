@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.34a7d6d9.css",
+    "main.js": "/static/js/main.fe6700ef.js",
+    "static/js/453.ed3810f9.chunk.js": "/static/js/453.ed3810f9.chunk.js",
+    "static/media/therapy-session.png": "/static/media/therapy-session.f117aa3d4357a0909365.png",
+    "static/media/busy-image.png": "/static/media/busy-image.c873df09071b27e436ea.png",
+    "static/media/Grådö_skans_edit.jpg": "/static/media/Grådö_skans_edit.56599babbb2f7b8d17e0.jpg",
+    "static/media/falun_014.jpg": "/static/media/falun_014.a4ae38975fafb680e8d7.jpg",
+    "static/media/olandsgatan1.jpg": "/static/media/olandsgatan1.ea091193cdf32af84d97.jpg",
+    "static/media/olandsgatan3.jpg": "/static/media/olandsgatan3.4413640299b4da8557ab.jpg",
+    "static/media/mamma_bild.jpeg": "/static/media/mamma_bild.e63a48a4ffb01d3fb7a6.jpeg",
+    "static/media/office1.jpeg": "/static/media/office1.134689fe37b18d32b058.jpeg",
+    "static/media/vastkusten.jpeg": "/static/media/vastkusten.43a4fcab0bbf9ce695a3.jpeg",
+    "static/media/office2.jpeg": "/static/media/office2.305236ed1fb27e927a80.jpeg",
+    "static/media/studio_image.jpeg": "/static/media/studio_image.305236ed1fb27e927a80.jpeg",
+    "index.html": "/index.html",
+    "main.34a7d6d9.css.map": "/static/css/main.34a7d6d9.css.map",
+    "main.fe6700ef.js.map": "/static/js/main.fe6700ef.js.map",
+    "453.ed3810f9.chunk.js.map": "/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.34a7d6d9.css",
+    "static/js/main.fe6700ef.js"
+  ]
+}
