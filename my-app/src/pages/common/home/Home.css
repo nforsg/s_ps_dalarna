@@ -1,5 +1,20 @@
 
-@media (min-width: 601px) {
+.container-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+
+  background-color: #FDF6F3;
+  /*background: linear-gradient(1turn, #FDF6F3 90%, #8BC34A 100%);*/
+  align-items: left;
+  text-align: left;
+  padding: 0.1rem;
+}
+
+
+@media (min-width: 1401px) {
 
 .left-column {
     display: flex;
@@ -18,7 +33,7 @@
     align-items: center;
 }
 
-.container {
+.container-home {
     flex-direction: row;
 }
 
@@ -62,12 +77,82 @@
 }
 
 
+@media (min-width: 601px) and (max-width: 1400px) {
+    .container-home {
+        width: auto;
+        flex-direction: row;
+        padding: 1rem;
+        border:0px solid black;
+    }
+
+    .left-column {
+        display: flex;
+        flex-direction: column;
+        border: 0px solid red;
+        align-items: center;
+        width:45vw;
+    }
+
+.left-column h1 {
+    font-size: 2.0rem;
+}
+
+.right-column {
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+    border: 0px solid peru;
+    width: 45vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-home {
+    flex-direction: row;
+}
+
+
+
+.right-column figure {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 1vw;
+    padding:0.5vw;
+    margin:0;
+    border: 0px solid purple;
+}
+
+
+.img__studio {
+    border-radius: 50px;
+    width: 40vw;
+}
+
+.img__therapist {
+    border-radius: 50px;
+    width:40vw;
+
+}
+.img__house {
+    border-radius: 50px;
+    width: 40vw;
+}
+
+.fig-caption {
+
+  bottom: 0.5vh;
+  left: 3vw;
+}
+
+}
+
+
 .fig-caption {
     font-size: 12px;
     position: absolute;
 }
 
-.container {
+.container-home {
     justify-content: flex-start;
     align-items: stretch;
 }
@@ -89,11 +174,11 @@
 
 
 @media (max-width: 600px) {
-    .container {
+    .container-home {
         width: auto;
         flex-direction: column;
         padding: 1rem;
-        border:1px solid black;
+        border:0px solid black;
     }
 
     .top-images-row {

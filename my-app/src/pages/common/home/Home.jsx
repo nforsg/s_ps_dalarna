@@ -9,7 +9,7 @@ import falun14 from './falun_014.jpg'
 
 function Home(){
   return (
-    <div className="container">
+    <div className="container-home">
       <div className='left-column'>
         <div className='box'>
           <h1>Samtal och psykoterapi i Dalarna AB</h1>
@@ -31,6 +31,7 @@ function Home(){
             Jag har också en familjeterapeutisk- och en ungdomsterapeutisk utbildning. Detta innebär att jag har möjlighet att anpassa metod efter behov.
             Jag har en lång erfarenhet inom psykiatri och socialt arbete.
           </p>
+          <p>Jag arbetar enligt hälso- och sjukvårdslagen och med lagstadgad tystnadsplikt.</p>
         </div>
       </div>
       <div className='right-column'>

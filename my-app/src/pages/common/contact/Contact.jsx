@@ -10,9 +10,9 @@ import olandsGatan1 from './olandsgatan1.jpg'
 
 function Contact(){
   return (
-    <div className='container'>
+    <div className='container-contact'>
       <div className='left-column-contact'>
-      <Box className='contact-window' flex={1}>
+      <Box className='contact-window'>
           <Box
             className='box-contact' 
             sx={{ mb: 2, p: 2,
@@ -36,8 +36,8 @@ function Contact(){
             }}
           >
             <h2>Besöksadress:</h2>
-            <p>Ölandsgatan 10, Falun</p>
-            <p>1 tr upp. Parkering i kvarteret eller allmän parkering på Nybrogatan</p>
+            <p>Ölandsgatan 10A 1 tr upp i Falun.</p>
+            <p>Parkering i kvarteret eller allmän parkering på Nybrogatan.</p>
           </Box>
 
           <Box 

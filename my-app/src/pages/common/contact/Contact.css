@@ -1,37 +1,67 @@
-@media (min-width:601px) {
+
+.container-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+
+  background-color: #FDF6F3;
+  /*background: linear-gradient(1turn, #FDF6F3 90%, #8BC34A 100%);*/
+  align-items: left;
+  text-align: left;
+  padding: 0.1rem;
+}
+
+@media (min-width:1401px) {
     
-.container {
+.container-contact {
     justify-content: flex-start;
     align-items: stretch;
     flex-direction: row;
 }
 
 .left-column-contact {
-    flex: 1;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     border: 0px solid peru;
-    border-radius: 10px;
-    height: 95vh;
+    border-radius: 20px;
+    width: 40vw;
+    margin: 1%;
     background-image: url("olandsgatan1.jpg");
-    background-size: cover;          /* Scales image to cover container */
+    background-size: cover;          /* Scales image to cover.container-contact */
     background-repeat: no-repeat;    /* Avoid tiling */
     background-position: center;     /* Center the image in the div */
+}
+
+.right-column-contact {
+    flex: 1;                     /* both grow to equal height */
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+    align-items: center;
+    justify-content: center;
+    border: 0px solid peru;
+    height: fit-content;
+    /*mask-image: radial-gradient(circle, black, black 55%, transparent 85%);*/
+    
 }
 
 
 .contact-window {
     border:0px solid black;
-    margin-left: 2vw;
+    margin-left: 1vw;
+    width: 65%;
 
 }
 
 .box-contact {
     border-radius: 10px;
-     margin-top: 1rem;
-     width: 50%;
+     margin-top: 0rem;
+     width: 100%;
+     border:0px solid yellow;
      height: fit-content;
      padding: 10px 10px 10px 10px;
      background-color: #f5f5f5;
@@ -57,32 +87,18 @@
 
 }
 
-
-.right-column-contact {
-    flex: 1;                     /* both grow to equal height */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: 0px solid peru;
-    width: 50vw;
-    height: 50vw;
-    /*mask-image: radial-gradient(circle, black, black 55%, transparent 85%);*/
-    
-}
-
 .image-box-contact {
     flex-direction: column;
 }
 
 .img__office {
     border-radius: 50px;
-    height: 23vw;
+    width:20vw;
     padding:0.5vw;
     transition: 0.3s;
     transition-delay: 0.1s;
     &:hover {
-        transform: scale(1.2);
+        transform: scale(1.1);
     }
 }
 
@@ -98,8 +114,108 @@
 
 }
 
+@media (min-width:601px) and (max-width:1401px) {
+  .container-contact {
+    justify-content: flex-start;
+    align-items: stretch;
+    width: 90%;
+    flex-direction: column;
+  }
+
+  .left-column-contact {
+    flex: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border: 10px solid peru;
+    border-radius: 10px;
+    height: fit-content;
+    background-image: url("olandsgatan1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0.2rem;
+  }
+
+  .contact-window {
+    width: 85%;
+    border:0px solid black;
+    padding:1%;
+  }
+
+  .box-contact {
+    border-radius: 10px;
+    margin-top: 1rem;;
+    border:15px solid yellow;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 10px 0px black;
+    font-size: 0.9rem;
+    transition: transform 0.3s ease;
+    transition-delay: 0.1s;
+  }
+
+  .box-contact:hover {
+    transform: scale(1.05); /* reduced hover effect for smaller screens */
+  }
+
+  .box-contact p {
+    border: 0px solid black;
+    padding: 0;
+    margin: 0;
+  }
+
+  .box-contact h1, 
+  .box-contact h2 {
+    margin: 0;
+    font-size: 1.2rem; /* scaled down for mobile */
+  }
+
+  .right-column-contact {
+    width: 95%;
+    flex: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 0px solid peru;
+    padding: 1rem 0;
+  }
+
+  .image-box-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 95%;
+    border:0px solid purple;
+  }
+
+  .img__office {
+    border-radius: 20px;
+    width: 90%;
+    transition: 0.3s;
+    transition-delay: 0.1s;
+  }
+
+  .img__office:hover {
+    transform: scale(1.1);
+  }
+
+  .img__street {
+    border-radius: 20px;
+    width: 90%;
+    padding: 0.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 @media (max-width:600px) {
-  .container {
+  .container-contact {
     justify-content: flex-start;
     align-items: stretch;
     width: 90%;

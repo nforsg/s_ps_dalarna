@@ -5,7 +5,7 @@ import falun14 from './falun_014.jpg'
 import "./About.css"
 function About(){
   return (
-    <div className='container'>
+    <div className='container-about'>
       <div className='left-column-about'>
         <div className='box'>
           <h1>Psykoterapi</h1>
@@ -15,7 +15,7 @@ function About(){
         </div>
         <div className='box'>
           <h1>Psykodynamiskt arbetssätt</h1>
-          <p>Psykoterapeutiska samtal som utgår från ett psykodynamiskt synsätt, innebär att individen genom samtalen lär känna sig själv och sin samvaro med andra utifrån tidiga mentala erfarenheter och hur dessa påverkat livet. Genom att öka förståelsen för och acceptansen av sig själv och de egna behoven, öppnas möjligheter till en förändring i livet.</p>
+          <p>Psykoterapeutiska samtal som utgår från ett psykodynamiskt synsätt, innebär att individen genom samtalen lär känna sig själv och sin samvaro med andra utifrån tidiga mentala och känslomässiga erfarenheter samt hur dessa påverkat livet. Genom att öka förståelsen för och acceptansen av sig själv och de egna behoven, öppnas möjligheter till en förändring i livet.</p>
         </div>
         <div className='box'>
           <h1>KBT</h1>
